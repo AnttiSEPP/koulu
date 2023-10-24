@@ -116,6 +116,10 @@ var eka = list.find(function(item) {
 });
 console.log(eka);
 //4.
+let suuruus = list.sort(function(a, b) {
+    return b - a;
+});
+//5.
 function pali(str) {
     return str == str.split('').reverse().join('');  
 }
