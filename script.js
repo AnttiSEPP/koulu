@@ -81,3 +81,42 @@ for (let i = 1; i < 101; i++) {
         console.log(i)
     }
 }
+list = [ 1,2,3,4,5,6,7]
+
+function antti(el) {
+    console.log(el+100);
+}
+
+list.forEach((element) => console.log(element+100))
+
+//let newList = list.map(func11);
+//console.log("map", newList);
+
+//function func12(el) {
+//}
+
+// tehtävät 24.10
+// 1.
+var list = [8, 447, 16, 91, 75, 2, 22, 36, 17, 63];
+
+list = list.filter(function(item) {
+    return item >= 10 && item <= 30;
+});
+console.log(list);
+// 2.
+
+var uusilista = list.map(function(item) {
+    return item + 5;
+});
+console.log(uusilista);
+//3.
+
+var eka = list.find(function(item) {
+    return item > 20;
+});
+console.log(eka);
+//4.
+function pali(str) {
+    return str == str.split('').reverse().join('');  
+}
+console.log(pali("otto"));
