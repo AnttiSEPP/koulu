@@ -124,3 +124,17 @@ function pali(str) {
     return str == str.split('').reverse().join('');  
 }
 console.log(pali("otto"));
+// 6.
+for (let i = 0; i < 11 ; i++) {
+    console.log(`numero: ${i}`);
+}
+//8.
+let liste = [1, 2, 3, 4];
+console.log(liste);
+liste.length = 0;
+console.log(liste);
+//9.
+let listA = [1,2,3];
+let list2 = [4,5,6];
+let yhd = [...listA, "text1" ,...list2, "text2"]
+console.log(yhd);
