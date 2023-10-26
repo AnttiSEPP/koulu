@@ -138,3 +138,22 @@ let listA = [1,2,3];
 let list2 = [4,5,6];
 let yhd = [...listA, "text1" ,...list2, "text2"]
 console.log(yhd);
+//10.
+const listi = [1,2,3,4,5,6,7,8,22,44,345,636];
+const arvo = 0;
+const summa = listi.reduce((accumulator, currentValue)=> accumulator + currentValue, arvo);
+console.log(summa);
+//11.
+class cat {
+    constructor(name, owner, age)  {
+        this.name = name;
+        this.owner = owner;
+        this.age = age
+    }
+    getInfo(){
+        let str = `name: ${this.name} owner: ${this.owner} age: ${this.age}`;
+        return str;
+    }
+}
+const cat1 = new cat("jari", "janne", 9);
+console.log(cat1.getInfo());
